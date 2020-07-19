@@ -1,0 +1,218 @@
+::selection {
+  background-color: #ff0e00;
+  color: #fff; }
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 38.5%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+
+.body {
+  font-family: "Raleway", serif;
+  font-weight: 300;
+  line-height: 1.6;
+  background-size: cover;
+  background-position: center; }
+
+.body--main {
+  background-image: url(../img/bruna-branco-t8hTmte4O_g-unsplash.jpg); }
+  @media only screen and (max-width: 37.5em) {
+    .body--main {
+      background-image: url(../img/wesley-tingey-ZdOW9Qd8mQo-unsplash-min.jpg); } }
+
+.body--edit {
+  background-image: url(../img/taylor-kiser-horiXQ2vO7g-unsplash.jpg); }
+  @media only screen and (max-width: 37.5em) {
+    .body--edit {
+      background-image: url(../img/wesley-tingey-ZdOW9Qd8mQo-unsplash-min.jpg); } }
+
+.container {
+  font-size: 1.6rem;
+  max-width: 50rem;
+  margin: 16rem auto;
+  min-height: 45rem;
+  padding: 3rem 8rem 6rem 8rem;
+  background-color: #fff;
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column; }
+
+.container-main {
+  align-items: flex-start; }
+
+.container-edit {
+  padding: 2rem 8rem 6rem 8rem;
+  align-items: center; }
+
+.heading-container {
+  padding: 3rem 2rem 2.5rem 0;
+  background: #9f1209;
+  background: linear-gradient(90deg, #9f1209 0%, #cd180a 41%, #ff0e00 100%);
+  -webkit-background-clip: text;
+  color: transparent; }
+  .heading-container--main {
+    align-self: flex-start; }
+  .heading-container--edit {
+    align-self: center; }
+
+.foo {
+  padding: 2.5rem 4rem 2.5rem 2.2rem;
+  margin-bottom: 3rem;
+  background-color: #f8f7f7;
+  box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.05); }
+  .foo:last-child {
+    margin-bottom: 6rem; }
+
+.ingredients-container {
+  width: 120%; }
+  .ingredients-container__heading {
+    font-size: 3rem;
+    color: #e20b00; }
+  .ingredients-container__box {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center; }
+  .ingredients-container__text {
+    font-size: 2.2rem;
+    color: #868686;
+    margin-left: 1rem; }
+  .ingredients-container__label {
+    width: 52%;
+    display: block; }
+  .ingredients-container__add {
+    padding: 1.85rem 2rem;
+    display: inline-block;
+    color: #fff;
+    margin-left: -1rem;
+    background-color: #ff0e00;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    align-self: center;
+    transition: all 0.2s; }
+    .ingredients-container__add:hover {
+      background-color: #e20b00; }
+  .ingredients-container__checkbox {
+    align-self: center; }
+  .ingredients-container__delete {
+    padding: 1rem 1.8rem;
+    color: #ff0e00;
+    border-radius: 6px;
+    margin-left: 1rem;
+    border: none;
+    background-color: rgba(238, 238, 238, 0.5);
+    cursor: pointer;
+    justify-self: flex-end;
+    transition: all 0.3s; }
+    .ingredients-container__delete:hover {
+      background-color: #ff0e00;
+      color: #fff; }
+  .ingredients-container__input {
+    padding: 1.5rem 2rem;
+    background-color: rgba(238, 238, 238, 0.5);
+    color: #505050;
+    border: none;
+    font-size: 1.7rem;
+    width: 60%;
+    margin: 3rem 0;
+    outline: none;
+    align-self: center; }
+  .ingredients-container__form {
+    display: flex; }
+
+.heading {
+  font-size: 3.4rem;
+  font-family: "Raleway", serif;
+  font-weight: 500; }
+
+.recipe-link:link, .recipe-link:visited {
+  font-size: 2rem;
+  color: #ff0e00;
+  text-decoration: none; }
+
+.recipe-text {
+  color: #868686;
+  font-size: 1.6rem;
+  padding: 0 3rem 0 0; }
+
+.input {
+  font-size: 1.9rem;
+  background-color: rgba(238, 238, 238, 0.5);
+  font-weight: 300;
+  width: 120%; }
+  .input::placeholder {
+    opacity: 0.4; }
+  .input:focus {
+    outline: none; }
+  .input--title {
+    color: #505050;
+    padding: 1.5rem 2rem;
+    border: none; }
+  .input--body {
+    color: #505050;
+    border: none;
+    font-family: "Raleway", serif;
+    display: block;
+    margin: 3.4rem 0;
+    min-height: 25rem;
+    padding: 0.8rem;
+    outline: none;
+    resize: none; }
+  .input--search {
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+    color: inherit;
+    background-color: rgba(238, 238, 238, 0.5);
+    border: none;
+    width: 98%;
+    outline: none;
+    border-bottom: 2px solid transparent;
+    display: block;
+    transition: all 0.3s;
+    align-self: flex-start;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.05); }
+    .input--search:focus {
+      outline: none;
+      border-bottom: 2px solid #ff0e00;
+      box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.05); }
+
+.btn {
+  background-image: repeating-linear-gradient(-45deg, #7bdff2 10px 30px, #b2f7ef 30px 50px, #eff7f6 50px 70px, #f7d6e0 70px 90px, #f2b5d4 90px 110px);
+  background-size: 300% 300%;
+  transition: 0.5s;
+  color: rgba(168, 93, 93, 0.445);
+  font-size: 1.2rem;
+  padding: 1.5rem 2rem;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  display: block;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: 0.5s;
+  outline: none; }
+  .btn:hover {
+    background-position: 20% center; }
+
+.back {
+  color: #ff0e00;
+  font-size: 2rem;
+  margin-left: -37rem;
+  transition: all 0.2s; }
+  .back:link, .back:visited {
+    text-decoration: none; }
+  .back:hover {
+    transform: scaleX(10px); }

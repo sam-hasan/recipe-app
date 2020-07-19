@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+        <title>Recipe</title>
+    </head>
+    <body class="body body--edit">
+
+    
+        <div class="container container-edit">
+            <a href="/index.html" class="back animate__animated animate__fadeIn animate__slow"> &larr; Home </a>
+            <div class="heading-container heading-container--edit animate__animated animate__fadeIn animate__slow">
+                <h1 class="heading">New recipe!</h1>
+            </div>
+
+
+            <input type="text" id="recipe-name" placeholder="Recipe" class="input--title input animate__animated animate__fadeIn animate__slow" />
+            <textarea id="recipe-steps" placeholder="Instructions" class="input--body input animate__animated animate__fadeIn animate__slow"></textarea>
+
+
+            <div class="ingredients-container animate__animated animate__fadeIn animate__slow">
+                <h2 class="ingredients-container__heading">Ingredients</h2>
+
+                <div id="ingredients-container__block">
+                </div>
+
+                <form id="add-ingredients" class="ingredients-container__form">
+                    <input type="text" placeholder="Add ingredient" name="text" class="ingredients-container__input"/>
+                    <button class="ingredients-container__add">Add</button>
+                </form>
+
+                <div>
+                    <button id="remove-recipe" class="btn" class="input ingredients-input">Remove recipe</button>
+                </div>
+            </div>
+
+        <script src="./scripts/functions.js"></script>
+        <script src="./scripts/ingredients.js"></script>
+        <script src="./scripts/edit.js"></script>
+    </body>
+</html>
+
+<!--
+
+<div class="cbx">
+  <input id="cbx" type="checkbox"/>
+  <label for="cbx"></label>
+  <svg width="15" height="14" viewbox="0 0 15 14" fill="none">
+    <path d="M2 8.36364L6.23077 12L13 2"></path>
+  </svg>
+</div>
+<!-- Gooey-->
+<!--
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="goo">
+        <fegaussianblur in="SourceGraphic" stddeviation="4" result="blur"></fegaussianblur>
+        <fecolormatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7" result="goo"></fecolormatrix>
+        <feblend in="SourceGraphic" in2="goo"></feblend>
+      </filter>
+    </defs>
+  </svg>
+-->

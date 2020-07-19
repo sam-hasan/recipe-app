@@ -1,0 +1,127 @@
+.container {
+    font-size: 1.6rem;
+    max-width: 50rem;
+    margin: 16rem auto;
+    min-height: 45rem;
+    padding: 3rem 8rem 6rem 8rem;
+    background-color: #fff;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container-main {
+    align-items: flex-start;
+}
+
+.container-edit {
+    padding: 2rem 8rem 6rem 8rem;
+    align-items: center;
+}
+
+.heading-container {
+    padding: 3rem 2rem 2.5rem 0;
+    @include color-gradient;
+
+    &--main {
+        align-self: flex-start;
+    }
+
+    &--edit {
+        align-self: center;
+    }
+}
+
+.foo {
+    padding: 2.5rem 4rem 2.5rem 2.2rem;
+    margin-bottom: 3rem;
+    background-color: rgb(248, 247, 247);
+    box-shadow: 0 0.8rem 0.8rem rgba(#000, 0.05);
+
+    &:last-child {
+        margin-bottom: 6rem;
+    }
+}
+
+.ingredients-container {
+    width: 120%;
+
+    &__heading {
+        font-size: 3rem;
+        color: $color-sub-dark;
+        //@include color-gradient;
+    }
+
+    &__box {
+        padding: 1rem 0;
+        display: flex;
+        align-items: center;
+    }
+
+    &__text {
+        font-size: 2.2rem;
+        color: $color-sub-2;
+        margin-left: 1rem;
+    }
+
+    &__label {
+        width: 52%;
+        display: block;
+    }
+
+    &__add {
+        padding: 1.85rem 2rem;
+        display: inline-block;
+        color: #fff;
+        margin-left: -1rem;
+        background-color: $color-sub;
+        border: none;
+        border-radius: 0;
+        cursor: pointer;
+        align-self: center;
+        transition: all 0.2s;
+
+        &:hover {
+            background-color: $color-sub-dark;
+        }
+    }
+
+    &__checkbox {
+        align-self: center;
+    }
+
+    &__delete {
+        padding: 1rem 1.8rem;
+        color: $color-sub;
+        border-radius: 6px;
+        margin-left: 1rem;
+        border: none;
+        background-color: $color-input;
+        cursor: pointer;
+        justify-self: flex-end;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: $color-sub;
+
+            color: #fff;
+        }
+    }
+
+    &__input {
+        padding: 1.5rem 2rem;
+        background-color: $color-input;
+        color: $color-sub-2-dark;
+        border: none;
+        font-size: 1.7rem;
+        width: 60%;
+        margin: 3rem 0;
+        outline: none;
+        align-self: center;
+    }
+
+    &__form {
+        display: flex;
+    }
+}

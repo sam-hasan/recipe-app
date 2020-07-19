@@ -1,0 +1,42 @@
+.btn {
+    background-image: repeating-linear-gradient(
+        -45deg,
+        #7bdff2 10px 30px,
+        #b2f7ef 30px 50px,
+        #eff7f6 50px 70px,
+        #f7d6e0 70px 90px,
+        #f2b5d4 90px 110px
+    );
+    background-size: 300% 300%;
+    transition: 0.5s;
+    color: rgba(168, 93, 93, 0.445);
+    font-size: 1.2rem;
+    padding: 1.5rem 2rem;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    display: block;
+    //transition: all 0.2s;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: 0.5s;
+    outline: none;
+
+    &:hover {
+        background-position: 20% center;
+    }
+}
+
+.back {
+    color: rgba(255, 14, 0, 1);
+    font-size: 2rem;
+    margin-left: -37rem;
+    transition: all 0.2s;
+    &:link,
+    &:visited {
+        text-decoration: none;
+    }
+
+    &:hover {
+        transform: scaleX(10px);
+    }
+}

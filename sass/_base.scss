@@ -1,0 +1,77 @@
+$font-main: 'Raleway', serif;
+
+// $color-sub-dark: rgb(204, 100, 100);
+$color-sub: rgba(255, 14, 0, 1);
+$color-sub-dark: rgb(226, 11, 0);
+$color-sub-2: rgb(134, 134, 134);
+$color-sub-2-dark: rgb(80, 80, 80);
+$color-input: rgba(#eee, 0.5);
+
+$tab-land: 62.5em; // 1200px
+$tab-port: 56.25em; // 900px;
+$phone: 37.5em; // 600px;
+
+::selection {
+    background-color: $color-sub;
+    color: #fff;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+@mixin color-gradient {
+    background: rgb(159, 18, 9);
+    background: linear-gradient(90deg, rgba(159, 18, 9, 1) 0%, rgba(205, 24, 10, 1) 41%, rgba(255, 14, 0, 1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@mixin color-gradient-button {
+    background-image: linear-gradient(to right, #895cf2 0%, #ffabf4 50%, #895cf2 100%);
+    transition: 0.5s;
+
+    &:hover {
+        background-position: right center;
+    }
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    @media only screen and (max-width: $phone) {
+        font-size: 38.5%;
+    }
+
+    @media only screen and (max-width: $tab-port) {
+        font-size: 50%;
+    }
+}
+
+.body {
+    font-family: $font-main;
+    font-weight: 300;
+    line-height: 1.6;
+    background-size: cover;
+    background-position: center;
+}
+
+.body--main {
+    background-image: url(../img/bruna-branco-t8hTmte4O_g-unsplash.jpg);
+
+    @media only screen and (max-width: $phone) {
+        background-image: url(../img/wesley-tingey-ZdOW9Qd8mQo-unsplash-min.jpg);
+    }
+}
+
+.body--edit {
+    background-image: url(../img/taylor-kiser-horiXQ2vO7g-unsplash.jpg);
+
+    @media only screen and (max-width: $phone) {
+        background-image: url(../img/wesley-tingey-ZdOW9Qd8mQo-unsplash-min.jpg);
+    }
+}

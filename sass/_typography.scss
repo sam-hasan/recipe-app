@@ -1,0 +1,19 @@
+.heading {
+    font-size: 3.4rem;
+    font-family: $font-main;
+    font-weight: 500;
+}
+
+.recipe-link {
+    &:link,
+    &:visited {
+        font-size: 2rem;
+        color: $color-sub;
+        text-decoration: none;
+    }
+}
+.recipe-text {
+    color: $color-sub-2;
+    font-size: 1.6rem;
+    padding: 0 3rem 0 0;
+}
